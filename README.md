@@ -18,3 +18,9 @@ Details regarding the model architecture can be found either on the original pap
 conda create -n ssn python=3.8
 pip install -r requirements.txt
 ```
+
+## Running Training
+```
+python trainer.py
+```
+All results (training, val and test) results are saved to results.csv per epoch. From this, we select the epoch weights with the best overall val-set scores.
